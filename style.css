@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css?family=Italiana&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Mulish&display=swap");
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* MY CSS */
+
+body {
+	background: #212121;
+	font-family: "Mulish", "Times New Roman", Times, serif;
+	font-weight: lighter;
+	color: #fff;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.logo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+}
+
+.logo-head {
+	text-transform: uppercase;
+	font-size: xx-large;
+	letter-spacing: 0.1rem;
+	font-family: "Italiana", "Times New Roman", Times, serif;
+	color: #fff;
+}
+
+.logo-subtitle {
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	font-family: "Mulish", "Times New Roman", Times, serif;
+	color: #d3ae36;
+}
+
+.MainHeader {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-items: center;
+}
