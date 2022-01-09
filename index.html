@@ -7,123 +7,131 @@
 		<link rel="stylesheet" href="./style.css" />
 	</head>
 	<body>
-		<header class="MainHeader">
+		<header class="main-header">
 			<div class="logo">
 				<div class="logo-head">Bistro Onyxe</div>
 				<div class="logo-subtitle">Italian Fine Dining</div>
 			</div>
-			<nav class="MainHeader-nav">
-				<ul>
-					<li><a href="./menu.html">Menu</a></li>
-					<li><a href="./about.html">Menu</a></li>
-					<li><a href="./make_reservation.html">Menu</a></li>
+			<nav class="main-header__nav">
+				<ul class="main-header__nav-items">
+					<li class="main-header__nav-item main-header__nav-item--active">
+						<a href="./menu.html">Home</a>
+					</li>
+					<li class="main-header__nav-item">
+						<a href="./menu.html">Menu</a>
+					</li>
+					<li class="main-header__nav-item">
+						<a href="./about.html">About</a>
+					</li>
+					<li class="main-header__nav-item">
+						<a href="./make_reservation.html">Make Reservation</a>
+					</li>
 				</ul>
 			</nav>
-			<a href="tel:+718-799-3116">Call Now</a>
+			<a class="btn" href="tel:+718-799-3116">Call Now</a>
 		</header>
 		<main>
-			<section>
-				<header>
-					<h1>Experience the luxury of Rome.</h1>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Reprehenderit, commodi?
-					</p>
-				</header>
-				<footer>
-					<p>Scroll Down</p>
-					<svg
-						width="34"
-						height="24"
-						viewBox="0 0 34 24"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path d="M2 1L17 21L32 1" stroke="white" stroke-width="3" />
-					</svg>
-				</footer>
+			<section class="hero-section">
+				<div class="hero-section__content-wrapper image-overlay">
+					<header class="hero-section__header">
+						<h1>Experience the luxury of Rome.</h1>
+						<p class="hero-section__description">
+							In every dish we put the same passion.<br />In every customer we
+							instill the same satisfaction.<br />In every glass of wine we
+							create an experience.
+						</p>
+					</header>
+					<footer class="hero-section__cta">
+						<p class="hero-section__cta-text">Scroll Down</p>
+						<svg
+							width="34"
+							height="24"
+							viewBox="0 0 34 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path d="M2 1L17 21L32 1" stroke="white" stroke-width="3" />
+						</svg>
+					</footer>
+				</div>
 			</section>
-			<section>
-				<header>
-					<h1>Get 15% Off When Reserving 3 or More!</h1>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Reprehenderit, commodi?
-					</p>
-				</header>
-				<footer>
-					<a href="tel:+718-799-3116">Reserve Now</a>
-				</footer>
+			<section class="image-section">
+				<div class="image-section__content-wrapper image-overlay">
+					<header class="image-section__header">
+						<h2>Get 15% Off When Reserving 3 or More!</h2>
+						<p>
+							We love families because they keep the world turning round. And we
+							want to help your family experience the best Italian they've ever
+							had.
+						</p>
+					</header>
+					<footer class="image-section__footer">
+						<a class="btn" href="tel:+718-799-3116">Reserve Now</a>
+					</footer>
+				</div>
 			</section>
-			<section>
-				<section>
+			<div class="padded-content">
+				<section class="two-col-section">
 					<img
+						class="two-col-section__img"
 						width="50%"
 						src="./assets/pexels-engin-akyurt-2697229.jpg"
 						alt="Pasta dish."
 					/>
-				</section>
-				<section>
-					<header>
-						<h1>Menu</h1>
-						<p>
+					<section class="two-col-section__content">
+						<h2 class="two-col-section__content-item">Menu</h2>
+						<p class="two-col-section__content-item">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
 							nulla esse architecto repellat dolorum velit quos quidem, saepe id
 							voluptatem.
 						</p>
-					</header>
-					<footer>
-						<a href="./menu.html">See Menu</a>
-					</footer>
+						<a class="btn two-col-section__content-item" href="./menu.html"
+							>See Menu</a
+						>
+					</section>
 				</section>
-			</section>
-			<section>
-				<section>
+				<section class="two-col-section">
 					<img
+						class="two-col-section__img"
 						width="50%"
 						src="./assets/pexels-andrea-piacquadio-3937468.jpg"
-						alt="People laughing over dinner."
+						alt="Pasta dish."
 					/>
-				</section>
-				<section>
-					<header>
-						<h1>About Us</h1>
-						<p>
+					<section class="two-col-section__content">
+						<h2 class="two-col-section__content-item">Menu</h2>
+						<p class="two-col-section__content-item">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
 							nulla esse architecto repellat dolorum velit quos quidem, saepe id
 							voluptatem.
 						</p>
-					</header>
-					<footer>
-						<a href="./about.html">Learn More</a>
-					</footer>
+						<a class="btn two-col-section__content-item" href="./menu.html"
+							>See Menu</a
+						>
+					</section>
 				</section>
-			</section>
-			<section>
-				<section>
-					<img src="./assets/google_maps.png" alt="Google maps mockup." />
-				</section>
-				<section>
-					<header>
-						<h1>Location & Hours</h1>
-					</header>
-					<footer>
-						<p>
+				<section class="two-col-section">
+					<img
+						class="two-col-section__img"
+						width="50%"
+						src="./assets/google_maps.png"
+						alt="Pasta dish."
+					/>
+					<section class="two-col-section__content">
+						<h2 class="two-col-section__content-item">Menu</h2>
+						<p class="two-col-section__content-item">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
 							nulla esse architecto repellat dolorum velit quos quidem, saepe id
 							voluptatem.
 						</p>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-							nulla esse architecto repellat dolorum velit quos quidem, saepe id
-							voluptatem.
-						</p>
-					</footer>
+						<a class="btn two-col-section__content-item" href="./menu.html"
+							>See Menu</a
+						>
+					</section>
 				</section>
-			</section>
+			</div>
 		</main>
-		<footer>
-			<p>2021 Bistro Onyxe of NYC. All rights reserved.</p>
+		<footer class="main-footer">
+			<p>@2021 Bistro Onyxe of NYC. All rights reserved.</p>
 			<a href="#">Privacy Policy</a>
 			<div>
 				<a href="#">491 Columbus Ave, New York, NY 10024</a>
