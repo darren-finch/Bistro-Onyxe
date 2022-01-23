@@ -22,32 +22,82 @@
 						<div class="full-width-section__content image-overlay__content">
 							<h2>Make Reservation</h2>
 						</div>
+					</section>
+					<div class="max-width-content">
 						<section class="contact-form-wrap">
 							<h2>Reservation Info</h2>
 							<form action="GET" class="contact-form">
 								<h4>Full Name</h4>
 								<div class="flex">
-									<input type="text" name="First Name" id="first-name" />
-									<input type="text" name="Last Name" id="last-name" />
+									<input
+										class="contact-form__input"
+										type="text"
+										placeholder="First Name..."
+										name="First Name"
+										id="first-name"
+									/>
+									<input
+										class="contact-form__input"
+										type="text"
+										placeholder="Last Name..."
+										name="Last Name"
+										id="last-name"
+									/>
 								</div>
 								<h4>Address</h4>
 								<div class="flex">
-									<input type="text" name="Street Address" id="street-address" />
-									<input type="text" name="City" id="city" />
-									<input type="text" name="State" id="state" />
-									<input type="text" name="Zip" id="zip" />
+									<input
+										class="contact-form__input"
+										type="text"
+										placeholder="Street Address..."
+										name="Street Address"
+										id="street-address"
+									/>
+									<input
+										class="contact-form__input"
+										type="text"
+										placeholder="City..."
+										name="City"
+										id="city"
+									/>
+									<input
+										class="contact-form__input"
+										type="text"
+										placeholder="State..."
+										name="State"
+										id="state"
+									/>
+									<input
+										class="contact-form__input"
+										type="text"
+										placeholder="Zip..."
+										name="Zip"
+										id="zip"
+									/>
 								</div>
 								<div class="flex">
-									<div>
+									<div class="contact-form__column">
 										<h4>Group Size</h4>
-										<input type="text" name="Group Size" id="group-size" />
+										<input
+											class="contact-form__input"
+											type="text"
+											placeholder="Group Size..."
+											name="Group Size"
+											id="group-size"
+										/>
 									</div>
-									<div>
+									<div class="contact-form__column">
 										<h4>Time of Reservation</h4>
-										<input type="text" name="Time of Reservation" id="time-of-reservation" />
+										<input
+											class="contact-form__input"
+											type="text"
+											placeholder="Time of Reservation..."
+											name="Time of Reservation"
+											id="time-of-reservation"
+										/>
 									</div>
 								</div>
-								<div>
+								<div class="flex">
 									<a href="#" class="btn">Submit Form</a>
 									<img
 										class="contact-form__recaptcha"
@@ -57,7 +107,7 @@
 								</div>
 							</form>
 						</section>
-					</section>
+					</div>
 				</main>
 				<div data-include="footer"></div>
 			</div>

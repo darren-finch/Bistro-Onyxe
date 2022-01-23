@@ -1,7 +1,8 @@
 :root {
 	--bg-color: #333;
-	--header-color: #212121;
-	--footer-color: #212121;
+	--dark-bg-color: #212121;
+	--header-color: var(--dark-bg-color);
+	--footer-color: var(--dark-bg-color);
 	--accent-color: #d3ae36;
 	--accent-color-half-opacity: rgba(211, 174, 54, 0.5);
 	--overlay-opacity: 0.5;
