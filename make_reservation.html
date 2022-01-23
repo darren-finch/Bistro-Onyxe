@@ -1,0 +1,66 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Menu</title>
+
+		<link rel="stylesheet" href="../styles/style.css" />
+		<script src="./scripts/jquery.js"></script>
+		<script src="./scripts/html-include.js"></script>
+		<script src="./scripts/dynamic-bg-img.js"></script>
+	</head>
+	<body>
+		<div class="page-container">
+			<div class="content-wrap">
+				<div data-include="header"></div>
+				<main>
+					<section
+						data-bg-img="pexels-klaus-nielsen-6287260.jpg"
+						class="full-width-section full-width-section--short image-overlay"
+					>
+						<div class="full-width-section__content image-overlay__content">
+							<h2>Make Reservation</h2>
+						</div>
+						<section class="contact-form-wrap">
+							<h2>Reservation Info</h2>
+							<form action="GET" class="contact-form">
+								<h4>Full Name</h4>
+								<div class="flex">
+									<input type="text" name="First Name" id="first-name" />
+									<input type="text" name="Last Name" id="last-name" />
+								</div>
+								<h4>Address</h4>
+								<div class="flex">
+									<input type="text" name="Street Address" id="street-address" />
+									<input type="text" name="City" id="city" />
+									<input type="text" name="State" id="state" />
+									<input type="text" name="Zip" id="zip" />
+								</div>
+								<div class="flex">
+									<div>
+										<h4>Group Size</h4>
+										<input type="text" name="Group Size" id="group-size" />
+									</div>
+									<div>
+										<h4>Time of Reservation</h4>
+										<input type="text" name="Time of Reservation" id="time-of-reservation" />
+									</div>
+								</div>
+								<div>
+									<a href="#" class="btn">Submit Form</a>
+									<img
+										class="contact-form__recaptcha"
+										src="./assets/recaptcha-v2-checkbox-mockup.svg"
+										alt="Recaptcha Mockup"
+									/>
+								</div>
+							</form>
+						</section>
+					</section>
+				</main>
+				<div data-include="footer"></div>
+			</div>
+		</div>
+	</body>
+</html>

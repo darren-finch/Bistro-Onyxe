@@ -1,131 +1,109 @@
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="stylesheet" href="./style.css" />
+		<title>Bistro Onyxe</title>
+
+		<!-- TODO: ADD FAVICON -->
+		<!-- <link rel="shortcut icon" href="" type="image/x-icon"> -->
+
+		<link rel="stylesheet" href="../styles/style.css" />
+		<script src="./scripts/jquery.js"></script>
+		<script src="./scripts/html-include.js"></script>
+		<script src="./scripts/dynamic-bg-img.js"></script>
 	</head>
 	<body>
-		<header class="main-header">
-			<div class="logo">
-				<div class="logo-head">Bistro Onyxe</div>
-				<div class="logo-subtitle">Italian Fine Dining</div>
-			</div>
-			<nav class="main-header__nav">
-				<ul class="main-header__nav-items">
-					<li class="main-header__nav-item main-header__nav-item--active">
-						<a href="./menu.html">Home</a>
-					</li>
-					<li class="main-header__nav-item">
-						<a href="./menu.html">Menu</a>
-					</li>
-					<li class="main-header__nav-item">
-						<a href="./about.html">About</a>
-					</li>
-					<li class="main-header__nav-item">
-						<a href="./make_reservation.html">Make Reservation</a>
-					</li>
-				</ul>
-			</nav>
-			<a class="btn" href="tel:+718-799-3116">Call Now</a>
-		</header>
-		<main>
-			<section class="hero-section">
-				<div class="hero-section__content-wrapper image-overlay">
-					<header class="hero-section__header">
+		<div class="page-container">
+			<div data-include="header"></div>
+			<main class="content-wrap">
+				<section data-bg-img="lasagna-g9ae9658dd_1920.jpg" class="hero-section image-overlay">
+					<div class="hero-section__content image-overlay__content">
 						<h1>Experience the luxury of Rome.</h1>
 						<p class="hero-section__description">
 							In every dish we put the same passion.<br />In every customer we instill the same
 							satisfaction.<br />In every glass of wine we create an experience.
 						</p>
-					</header>
-					<footer class="hero-section__cta">
-						<p class="hero-section__cta-text">Scroll Down</p>
-						<svg
-							width="34"
-							height="24"
-							viewBox="0 0 34 24"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path d="M2 1L17 21L32 1" stroke="white" stroke-width="3" />
-						</svg>
-					</footer>
-				</div>
-			</section>
-			<section class="image-section">
-				<div class="image-section__content-wrapper image-overlay">
-					<header class="image-section__header">
+						<footer class="hero-section__cta">
+							<p class="hero-section__cta-text">Scroll Down</p>
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 34 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path d="M2 1L17 21L32 1" stroke="white" stroke-width="3" />
+							</svg>
+						</footer>
+					</div>
+				</section>
+				<section
+					data-bg-img="pexels-nicole-michalou-5778906.jpg"
+					class="full-width-section image-overlay"
+				>
+					<div class="full-width-section__content image-overlay__content">
 						<h2>Get 15% Off When Reserving 3 or More!</h2>
 						<p>
-							We love families because they keep the world turning round. And we want to help your
-							family experience the best Italian they've ever had.
+							We love families. And we want to help your family experience the best Italian they've
+							ever had.
 						</p>
-					</header>
-					<footer class="image-section__footer">
 						<a class="btn" href="tel:+718-799-3116">Reserve Now</a>
-					</footer>
+					</div>
+				</section>
+				<div class="max-width-content">
+					<section class="two-col-img-section">
+						<img
+							class="two-col-img-section__img"
+							width="50%"
+							src="./assets/pexels-engin-akyurt-2697229.jpg"
+							alt="Pasta dish."
+						/>
+						<section class="two-col-img-section__content">
+							<h2 class="two-col-img-section__content-item">Menu</h2>
+							<p class="two-col-img-section__content-item">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nulla esse
+								architecto repellat dolorum velit quos quidem, saepe id voluptatem.
+							</p>
+							<a class="btn two-col-img-section__content-item" href="./menu.html">See Menu</a>
+						</section>
+					</section>
+					<section class="two-col-img-section">
+						<img
+							class="two-col-img-section__img"
+							width="50%"
+							src="./assets/pexels-andrea-piacquadio-3937468.jpg"
+							alt="Pasta dish."
+						/>
+						<section class="two-col-img-section__content">
+							<h2 class="two-col-img-section__content-item">About Us</h2>
+							<p class="two-col-img-section__content-item">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nulla esse
+								architecto repellat dolorum velit quos quidem, saepe id voluptatem.
+							</p>
+							<a class="btn two-col-img-section__content-item" href="./menu.html">See Menu</a>
+						</section>
+					</section>
+					<section class="two-col-img-section">
+						<img
+							class="two-col-img-section__img"
+							width="50%"
+							src="./assets/google_maps.png"
+							alt="Pasta dish."
+						/>
+						<section class="two-col-img-section__content">
+							<h2 class="two-col-img-section__content-item">Location & Hours</h2>
+							<p class="two-col-img-section__content-item">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nulla esse
+								architecto repellat dolorum velit quos quidem, saepe id voluptatem.
+							</p>
+							<a class="btn two-col-img-section__content-item" href="./menu.html">See Menu</a>
+						</section>
+					</section>
 				</div>
-			</section>
-			<div class=".two-col-section-list">
-				<section class="two-col-section">
-					<img
-						class="two-col-section__img"
-						width="50%"
-						src="./assets/pexels-engin-akyurt-2697229.jpg"
-						alt="Pasta dish."
-					/>
-					<section class="two-col-section__content">
-						<h2 class="two-col-section__content-item">Menu</h2>
-						<p class="two-col-section__content-item">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nulla esse
-							architecto repellat dolorum velit quos quidem, saepe id voluptatem.
-						</p>
-						<a class="btn two-col-section__content-item" href="./menu.html">See Menu</a>
-					</section>
-				</section>
-				<section class="two-col-section">
-					<img
-						class="two-col-section__img"
-						width="50%"
-						src="./assets/pexels-andrea-piacquadio-3937468.jpg"
-						alt="Pasta dish."
-					/>
-					<section class="two-col-section__content">
-						<h2 class="two-col-section__content-item">About Us</h2>
-						<p class="two-col-section__content-item">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nulla esse
-							architecto repellat dolorum velit quos quidem, saepe id voluptatem.
-						</p>
-						<a class="btn two-col-section__content-item" href="./menu.html">See Menu</a>
-					</section>
-				</section>
-				<section class="two-col-section">
-					<img
-						class="two-col-section__img"
-						width="50%"
-						src="./assets/google_maps.png"
-						alt="Pasta dish."
-					/>
-					<section class="two-col-section__content">
-						<h2 class="two-col-section__content-item">Location & Hours</h2>
-						<p class="two-col-section__content-item">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nulla esse
-							architecto repellat dolorum velit quos quidem, saepe id voluptatem.
-						</p>
-						<a class="btn two-col-section__content-item" href="./menu.html">See Menu</a>
-					</section>
-				</section>
-			</div>
-		</main>
-		<footer class="main-footer">
-			<p>@2021 Bistro Onyxe of NYC. All rights reserved.</p>
-			<a href="#">Privacy Policy</a>
-			<div>
-				<a href="#">491 Columbus Ave, New York, NY 10024</a>
-				<a href="tel:+718-799-3116">718-799-3116</a>
-			</div>
-		</footer>
+			</main>
+			<div data-include="footer"></div>
+		</div>
 	</body>
 </html>
