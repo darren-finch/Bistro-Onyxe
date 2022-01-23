@@ -6,7 +6,13 @@
 }
 
 .content-wrap {
+	display: flex;
+	flex-direction: column;
 	padding-bottom: var(--footer-height);
+
+	& > * {
+		flex: 1 1 100%;
+	}
 }
 
 .btn {
@@ -118,14 +124,12 @@
 }
 
 .full-width-section {
+	background-size: cover;
 	text-align: center;
 	height: 50vh;
-	background-size: cover;
 	padding: 1rem;
 
 	&__content {
-		width: 100%;
-		height: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -134,7 +138,7 @@
 	}
 
 	&--short {
-		height: 25vh;
+		height: fit-content;
 	}
 }
 
@@ -244,5 +248,39 @@
 		& > :first-child {
 			margin-bottom: 2rem;
 		}
+	}
+}
+
+.about-us-section {
+	margin: auto auto;
+	text-align: center;
+	width: 20rem;
+	height: 20rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+	padding: 1rem;
+	border-radius: 50%;
+	background-size: cover;
+
+	// For the image overlay
+	&::before {
+		border-radius: 50%;
+	}
+}
+
+.about-us-line {
+	margin: auto auto;
+	background-color: var(--accent-color-half-opacity);
+	width: 2px;
+	height: 10rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	& > * {
+		position: absolute;
 	}
 }
