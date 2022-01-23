@@ -143,6 +143,10 @@ body {
 	font-family: "Mulish", "Times New Roman", Times, serif;
 	color: #fff;
 	text-align: center; //mobile first design bois
+
+	@media (min-width: 48rem) {
+		text-align: left;
+	}
 }
 
 a {
