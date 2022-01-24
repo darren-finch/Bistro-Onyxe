@@ -47,6 +47,10 @@
 	flex-direction: column;
 	align-items: center;
 	justify-items: center;
+
+	@media (min-width: 48rem) {
+		align-items: flex-start;
+	}
 }
 
 .logo-head {
@@ -67,13 +71,21 @@
 
 .main-header {
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: 1rem;
-	padding: 1rem;
-	font-size: small;
 	background-color: var(--header-color);
+
+	&__content {
+		max-width: var(--max-width);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+		padding: 1rem;
+		font-size: small;
+		white-space: nowrap;
+	}
 
 	&__nav-items {
 		margin-top: -0.5rem;
@@ -92,6 +104,27 @@
 		width: 75%;
 		text-align: center;
 		margin: 0rem 1rem;
+	}
+
+	@media (min-width: 48rem) {
+		&__content {
+			flex-basis: 100%;
+			flex-direction: row;
+			font-size: large;
+
+			& > * {
+				flex-basis: 100%;
+			}
+		}
+
+		&__cta {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+		}
+		&__cta > .btn {
+			width: 25%;
+		}
 	}
 }
 
@@ -161,7 +194,7 @@
 	margin: auto auto;
 	padding: 1rem;
 	margin-bottom: 1rem;
-	max-width: 120rem;
+	max-width: var(--max-width);
 }
 
 .two-col-img-section {
@@ -174,8 +207,8 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 1rem;
 		justify-content: center;
+		gap: 1rem;
 	}
 
 	& > * {
@@ -194,6 +227,7 @@
 		}
 
 		&__content {
+			align-items: flex-start;
 			text-align: left;
 		}
 	}
@@ -205,12 +239,35 @@
 	width: 100%;
 	height: var(--footer-height);
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	gap: 1rem;
 	font-size: small;
 	background-color: var(--footer-color);
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	@media (min-width: 48rem) {
+		justify-content: center;
+
+		&__content {
+			margin: 0 1rem;
+			flex-basis: 100%;
+			max-width: var(--max-width);
+			justify-content: space-between;
+			flex-direction: row;
+
+			& > * {
+				align-items: center;
+				justify-content: center;
+			}
+		}
+	}
 }
 
 .menu-cards-container {
