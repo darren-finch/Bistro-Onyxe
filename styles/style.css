@@ -238,6 +238,12 @@ h3 {
   font-size: 1rem;
   border: none;
   color: white;
+  transition: all 250ms ease-in-out;
+}
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  padding: 1rem 3rem;
 }
 
 .image-overlay {
@@ -270,6 +276,11 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-items: center;
+  transition: all 250ms ease-in-out;
+}
+.logo:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 @media (min-width: 48rem) {
   .logo {
@@ -317,6 +328,12 @@ h3 {
   justify-content: center;
   gap: 1rem;
   white-space: nowrap;
+}
+.main-header__nav-item {
+  transition: all 250ms ease-in-out;
+}
+.main-header__nav-item:hover {
+  color: var(--accent-color);
 }
 .main-header__nav-item--active {
   text-decoration: underline;
@@ -408,8 +425,7 @@ h3 {
 
 .max-width-content {
   margin: auto auto;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  padding: 2rem;
   max-width: var(--max-width);
 }
 

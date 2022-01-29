@@ -19,6 +19,13 @@
 	font-size: 1rem;
 	border: none;
 	color: white;
+	transition: all 250ms ease-in-out;
+
+	&:hover {
+		cursor: pointer;
+		opacity: 0.8;
+		padding: 1rem 3rem;
+	}
 }
 
 .image-overlay {
@@ -53,6 +60,12 @@
 	flex-direction: column;
 	align-items: center;
 	justify-items: center;
+	transition: all 250ms ease-in-out;
+
+	&:hover {
+		cursor: pointer;
+		opacity: 0.8;
+	}
 
 	@media (min-width: 48rem) {
 		align-items: flex-start;
@@ -100,6 +113,14 @@
 		justify-content: center;
 		gap: 1rem;
 		white-space: nowrap;
+	}
+
+	&__nav-item {
+		transition: all 250ms ease-in-out;
+
+		&:hover {
+			color: var(--accent-color);
+		}
 	}
 
 	&__nav-item--active {
@@ -198,8 +219,7 @@
 
 .max-width-content {
 	margin: auto auto;
-	padding: 1rem;
-	margin-bottom: 1rem;
+	padding: 2rem;
 	max-width: var(--max-width);
 }
 
