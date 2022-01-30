@@ -18,6 +18,7 @@
   --tablet-breakpoint: 48rem;
   --desktop-breakpoint: 75rem;
   --max-width: 120rem;
+  --content-padding: 2rem;
   --footer-height: 8rem;
 }
 
@@ -180,7 +181,11 @@ a {
 img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
+}
+@media (max-width: 48rem) {
+  img {
+    width: 100%;
+  }
 }
 
 h1,
@@ -267,8 +272,8 @@ h3 {
 
 .profile-pic {
   border-radius: 50%;
-  width: 20rem;
-  height: 20rem;
+  width: 300px;
+  height: 300px;
 }
 
 .logo {
@@ -364,7 +369,7 @@ h3 {
 
 .hero-section {
   text-align: center;
-  height: 50vh;
+  height: 50rem;
   background-size: cover;
   padding: 1rem;
   margin-bottom: 1rem;
