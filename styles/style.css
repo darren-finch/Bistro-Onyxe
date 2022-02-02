@@ -231,6 +231,10 @@ h3 {
     font-size: 2rem;
   }
 }
+.p--big {
+  font-size: large;
+}
+
 .page-container {
   position: relative;
   min-height: 100vh;
