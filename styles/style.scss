@@ -314,7 +314,8 @@
 	justify-content: center;
 	align-items: center;
 	gap: 1rem;
-	height: 20vh;
+	height: 300px;
+	text-align: center;
 }
 
 .menu-section {
@@ -473,6 +474,12 @@
 	align-items: center;
 	justify-content: center;
 	white-space: nowrap;
+}
+
+#cta > hero-section__cta-text {
+	&:hover {
+		margin-bottom: 1rem;
+	}
 }
 
 @media (min-width: 48rem) {
