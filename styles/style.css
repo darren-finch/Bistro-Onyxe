@@ -419,7 +419,6 @@ h3 {
   height: 25vh;
 }
 .full-width-section--fit-content {
-  min-height: -webkit-fit-content;
   min-height: -moz-fit-content;
   min-height: fit-content;
 }
@@ -591,10 +590,8 @@ h3 {
 }
 
 .contact-form__recaptcha {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   opacity: 0.9;
